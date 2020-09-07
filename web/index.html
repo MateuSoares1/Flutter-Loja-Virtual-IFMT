@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
   <meta name="description" content="A new Flutter project.">
+  <meta name="google-signin-client_id" content="420545748161-k61e668bhvsb93n89ffkeq2qhd4atib6.apps.googleusercontent.com">
 
   <!-- iOS meta tags & icons -->
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -21,6 +22,33 @@
   <!-- This script installs service_worker.js to provide PWA functionality to
        application. For more information, see:
        https://developers.google.com/web/fundamentals/primers/service-workers -->
+
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-analytics.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+     <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyCK2ZgJwQ9wtwGcxB8XNm0yqmPj1tdXqXI",
+        authDomain: "lojaifmt.firebaseapp.com",
+        databaseURL: "https://lojaifmt.firebaseio.com",
+        projectId: "lojaifmt",
+        storageBucket: "lojaifmt.appspot.com",
+        messagingSenderId: "420545748161",
+        appId: "1:420545748161:web:c162068a9cd31543f68840",
+        measurementId: "G-3BQQJ8HE3T"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>    
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', function () {
