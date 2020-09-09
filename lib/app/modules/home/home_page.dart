@@ -1,3 +1,4 @@
+import 'package:FlutterLojaVirtual/app/modules/home/widgets/filtro_home.dart';
 import 'package:FlutterLojaVirtual/app/widgets/body/center_view.dart';
 import 'package:FlutterLojaVirtual/app/widgets/footer/footer.dart';
 import 'package:flutter/material.dart';
@@ -26,8 +27,14 @@ class _HomePageState extends ModularState<HomePage, HomeController> {
       body: CenterView(
         child: Column(
           children: [
-            Expanded(child: Container()),
-            Expanded(child: Container()),
+            Expanded(child: FiltroHome()),
+            Expanded(
+                child: ListView(
+              children: [
+                Text('data'),
+                Text('data'),
+              ],
+            )),
             Footer(),
           ],
         ),
